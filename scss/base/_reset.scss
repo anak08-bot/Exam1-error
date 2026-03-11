@@ -1,7 +1,8 @@
 @use "../abstracts/variables" as v;
+@use "./typography" as t;
 
 body {
-  font-family: "Satoshi", sans-serif;
+  font-family: 'Satoshi', sans-serif;
   line-height: 1.5;
     background-color: v.$bg-primary;
 }
