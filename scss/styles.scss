@@ -1,13 +1,6 @@
-@use "./scss/base";
-@use "./scss/variables";
-@use "./scss/sidebar";
+@use "./base/base";
+@use "./base/reset";
+@use "./abstracts/variables";
+@use "./abstracts/mixins";
+@use "./components/sidebar";
 
-.sidebar-nav {
-    display: flex;
-    justify-content: center;
-    border: 1px solid red($color: #000000);
-}
-
-img {
-    width: 100%;
-}
