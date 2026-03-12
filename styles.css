@@ -210,6 +210,11 @@ header {
   display: flex;
   gap: 8px;
   margin-bottom: 24px;
+  justify-content: space-between;
+}
+
+.chip:hover {
+  background-color: #333842;
 }
 
 .chip {
@@ -265,6 +270,10 @@ header {
 .on-off img {
   height: 11px;
   width: 10px;
+}
+
+.on-off:hover {
+  background-color: green;
 }
 
 .player-center {

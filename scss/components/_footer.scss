@@ -39,6 +39,10 @@
   }
 }
 
+.on-off:hover {
+  background-color: green;
+}
+
 .player-center {
   @include mixins.flex();
   padding: 15px 0;
