@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins";
+@use "../base/base" as b;
+@use "../base/reset";
+
+.main-views {
+  margin-left: 16rem;
+  margin-top: 60px;   
+  margin-right: 7px;
+  padding: 24px;
+  background: v.$bg-primary;
+  min-height: calc(100vh - 55px);
+  border: v.$border;
+  border-radius: v.$btn-border-radius;
+}  
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.chip {
+  background-color: v.$btn-background;
+  color: v.$btn-color;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.chip.active {
+  background-color: v.$btn-color;
+  color:rgba(17, 17, 17, 1);
+}

@@ -28,7 +28,7 @@ header {
         align-items: center;
         color: v.$text-primary;
         gap: 11px;
-        background-color: rgba(32, 32, 32, 0.5);
+        background-color: v.$btn-background;
         padding: 10px 105px 10px 15px;
         border-radius: 8px;
     }

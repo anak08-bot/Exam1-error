@@ -195,4 +195,36 @@ header {
   height: 40px;
 }
 
+.main-views {
+  margin-left: 16rem;
+  margin-top: 60px;
+  margin-right: 7px;
+  padding: 24px;
+  background: rgb(6, 6, 6);
+  min-height: calc(100vh - 55px);
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 8px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.chip {
+  background-color: rgba(32, 32, 32, 0.5);
+  color: rgb(224, 224, 224);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.chip.active {
+  background-color: rgb(224, 224, 224);
+  color: rgb(17, 17, 17);
+}
+
 /*# sourceMappingURL=styles.css.map */
