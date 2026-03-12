@@ -227,4 +227,81 @@ header {
   color: rgb(17, 17, 17);
 }
 
+.player {
+  background-color: #333842;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 16rem;
+  width: 84%;
+  height: 81px;
+  border-radius: 10px;
+}
+
+.player-left {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  gap: 5px;
+  padding-left: 70px;
+}
+.player-left img {
+  height: 38px;
+}
+
+.line {
+  width: 696px;
+}
+
+.on-off {
+  background-color: #1ED760;
+  position: absolute;
+  left: 21px;
+  padding: 15px;
+  border-radius: 50%;
+}
+.on-off img {
+  height: 11px;
+  width: 10px;
+}
+
+.player-center {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  gap: 10px;
+  padding-left: 32px;
+}
+.player-center img {
+  width: 51px;
+  height: 51px;
+}
+
+.track-name {
+  font-size: 14px;
+  color: rgb(224, 224, 224);
+  font-weight: 400;
+}
+
+.track-info {
+  font-size: 14px;
+  color: rgb(137, 137, 137);
+  font-weight: 400;
+}
+
+.player-right {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 5px;
+}
+
+.more {
+  padding-right: 6px;
+  border-right: 2px solid rgb(137, 137, 137);
+  height: 36px;
+}
+
 /*# sourceMappingURL=styles.css.map */
