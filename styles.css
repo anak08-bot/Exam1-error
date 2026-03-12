@@ -68,7 +68,6 @@ p {
   width: 16rem;
   height: 100vh;
   background-color: rgb(6, 6, 6);
-  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -84,7 +83,17 @@ p {
   padding: 10px;
   color: rgb(137, 137, 137);
   gap: 10px;
-  padding: 11px 20px;
+  position: relative;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.sidebar-nav a .vector {
+  position: absolute;
+  right: 15px;
+  width: 10px;
+}
+.sidebar-nav img:not(.vector) {
+  width: 40px;
+  height: 40px;
 }
 
 .sidebar-nav a:hover {
@@ -92,12 +101,10 @@ p {
   border-radius: 8px;
   color: #E0E0E0;
   background-color: rgb(0, 0, 0);
-  transform: background-color 0.3s ease;
 }
 
-.vector {
-  position: absolute;
-  right: 12px;
+.library a {
+  padding: 7px 15px;
 }
 
 header {

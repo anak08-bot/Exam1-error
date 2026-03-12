@@ -50,16 +50,14 @@ input[type="search"] {
     background-color: rgba(6, 6, 6, 1);
     border: none;
     /* padding: 7px 10px; */
-    border-radius: 16px;
+    border-radius: v.$border-radius;
     color: #faf7f7;
     width: 400px;
 }
-
-
 
 .action-icons {
     display: flex;
     gap: 20px;
     align-items: center;
 }
-
+ 
