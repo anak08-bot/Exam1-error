@@ -15,49 +15,78 @@ header {
     padding: 0 0 0 260px;
 }
 
-.main-nav li {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-}
-
-.main-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease;
+.main-nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
+    gap: 20px;
+}    
+
+.home-btn {
+    a{
+        display: flex;
+        align-items: center;
+        color: v.$text-primary;
+        gap: 11px;
+        background-color: rgba(32, 32, 32, 0.5);
+        padding: 10px 105px 10px 15px;
+        border-radius: 8px;
+    }
 }
 
-.main-nav ul {
+.nav-link {
     display: flex;
-    gap: 6px;
-    flex-direction: row;
+    align-items: center;
+    color: v.$text-secondary;
+    gap: 10px;
+    padding-right: 20px;
 }
 
-.home-btn a{
- background-color: #1a1a1a;
- padding: 7px 106px 7px 15px;
- border-radius: 8px;
+.nav-link:hover {
+    color: v.$text-primary;
+    cursor: pointer;
 }
 
-input[type="search"] {
-    background-color: rgba(6, 6, 6, 1);
-    border: none;
-    /* padding: 7px 10px; */
-    border-radius: v.$border-radius;
-    color: #faf7f7;
-    width: 400px;
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: v.$bg-primary;
+    transition: background-color 0.2s;
+    padding: 6px 12px;
+
+    &:focus-within {
+        background-color: v.$bg-primary;
+        outline: 2px solid v.$bg-primary;
+    }
+    .search-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        filter: brightness(0.7); 
+    }
 }
+
+ .search-input {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 0.85rem;
+        width: 100%;
+        outline: none;
+
+        &::placeholder {
+            color: v.$text-secondary;
+        }
+    }
 
 .action-icons {
     display: flex;
-    gap: 20px;
+    gap: 13px;
     align-items: center;
+    padding:7px;
+    
+    img {
+        width: 40px;
+        height: 40px;
+    }
 }
- 

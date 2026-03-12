@@ -13,7 +13,6 @@ ol {
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 img {
@@ -64,10 +63,15 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  font-size: 14px;
+}
+
 .sidebar {
   width: 16rem;
   height: 100vh;
   background-color: rgb(6, 6, 6);
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -84,7 +88,7 @@ p {
   color: rgb(137, 137, 137);
   gap: 10px;
   position: relative;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.1s ease, color 0.1s ease;
 }
 .sidebar-nav a .vector {
   position: absolute;
@@ -120,50 +124,75 @@ header {
   padding: 0 0 0 260px;
 }
 
-.main-nav li {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
-}
-
-.main-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s ease;
+.main-nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-}
-
-.main-nav ul {
-  display: flex;
-  gap: 6px;
-  flex-direction: row;
+  gap: 20px;
 }
 
 .home-btn a {
-  background-color: #1a1a1a;
-  padding: 7px 106px 7px 15px;
+  display: flex;
+  align-items: center;
+  color: #E0E0E0;
+  gap: 11px;
+  background-color: rgba(32, 32, 32, 0.5);
+  padding: 10px 105px 10px 15px;
   border-radius: 8px;
 }
 
-input[type=search] {
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: rgb(137, 137, 137);
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.nav-link:hover {
+  color: #E0E0E0;
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
   background-color: rgb(6, 6, 6);
+  transition: background-color 0.2s;
+  padding: 6px 12px;
+}
+.search-container:focus-within {
+  background-color: rgb(6, 6, 6);
+  outline: 2px solid rgb(6, 6, 6);
+}
+.search-container .search-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  filter: brightness(0.7);
+}
+
+.search-input {
+  background: transparent;
   border: none;
-  /* padding: 7px 10px; */
-  border-radius: 16px;
-  color: #faf7f7;
-  width: 400px;
+  color: white;
+  font-size: 0.85rem;
+  width: 100%;
+  outline: none;
+}
+.search-input::placeholder {
+  color: rgb(137, 137, 137);
 }
 
 .action-icons {
   display: flex;
-  gap: 20px;
+  gap: 13px;
   align-items: center;
+  padding: 7px;
+}
+.action-icons img {
+  width: 40px;
+  height: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
