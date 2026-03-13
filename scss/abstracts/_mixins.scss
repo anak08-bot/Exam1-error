@@ -3,3 +3,14 @@
   border: 1px solid $color;
   overflow: hidden; 
 }
+
+@mixin text-style($color: rgba(137, 137, 137, 1)) {
+    font-size: 14px;
+    color: $color;
+    font-weight: 400;
+}
+
+@mixin flex() {
+    display: flex;
+    align-items: center;
+}
