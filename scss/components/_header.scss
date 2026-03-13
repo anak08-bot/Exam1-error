@@ -3,90 +3,90 @@
 @use "../base/base" as b;
 
 header {
-    width: 100%;
-    height: 55px;
-    background-color: v.$bg-primary;
-    display: flex;
-   justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0 0 0 260px;
+  width: 100%;
+  height: 55px;
+  background-color: v.$bg-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 0 0 260px;
 }
 
 .main-nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
 
 .home-btn {
-    a{
-        display: flex;
-        align-items: center;
-        color: v.$text-primary;
-        gap: 11px;
-        background-color: v.$btn-background;
-        padding: 10px 105px 10px 15px;
-        border-radius: 8px;
-    }
+  a {
+    display: flex;
+    align-items: center;
+    color: v.$text-primary;
+    gap: 11px;
+    background-color: v.$btn-background;
+    padding: 10px 105px 10px 15px;
+    border-radius: 8px;
+  }
 }
 
 .nav-link {
-    display: flex;
-    align-items: center;
-    color: v.$text-secondary;
-    gap: 10px;
-    padding-right: 20px;
+  display: flex;
+  align-items: center;
+  color: v.$text-secondary;
+  gap: 10px;
+  padding-right: 20px;
 }
 
 .nav-link:hover {
-    color: v.$text-primary;
-    cursor: pointer;
+  color: v.$text-primary;
+  cursor: pointer;
 }
 
 .search-container {
-    display: flex;
-    align-items: center;
-    background-color: v.$bg-primary;
-    transition: background-color 0.2s;
-    padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  background-color: v.$bg-primary;
+  transition: background-color 0.2s;
+  padding: 6px 12px;
 
-    &:focus-within {
-        background-color: v.$bg-primary;
-        outline: 2px solid v.$bg-primary;
-    }
-    .search-icon {
-        width: 40px;
-        height: 40px;
-        margin-right: 5px;
-        filter: brightness(0.7); 
-    }
+  &:focus-within {
+    background-color: v.$bg-primary;
+    outline: 2px solid v.$bg-primary;
+  }
+  .search-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    filter: brightness(0.7);
+  }
 }
 
- .search-input {
-        background: transparent;
-        border: none;
-        color: white;
-        font-size: 0.85rem;
-        width: 100%;
-        outline: none;
+.search-input {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 0.85rem;
+  width: 100%;
+  outline: none;
 
-        &::placeholder {
-            color: v.$text-secondary;
-        }
-    }
+  &::placeholder {
+    color: v.$text-secondary;
+  }
+}
 
 .action-icons {
-    display: flex;
-    gap: 13px;
-    align-items: center;
-    padding:7px;
-    
-    img {
-        width: 40px;
-        height: 40px;
-    }
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  padding: 7px;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
 }
