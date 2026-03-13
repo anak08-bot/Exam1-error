@@ -84,20 +84,20 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 10px;
+  padding: 11px 20px;
   color: rgb(137, 137, 137);
   gap: 10px;
   position: relative;
-  transition: background-color 0.1s ease, color 0.1s ease;
-}
-.sidebar-nav a .vector {
-  position: absolute;
-  right: 15px;
-  width: 10px;
+  transition: background-color 0.3s ease, color 0.1s ease;
 }
 .sidebar-nav img:not(.vector) {
   width: 40px;
   height: 40px;
+}
+.sidebar-nav .vector {
+  position: absolute;
+  right: 15px;
+  width: 10px;
 }
 
 .sidebar-nav a:hover {
