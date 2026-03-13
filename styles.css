@@ -313,4 +313,52 @@ header {
   height: 36px;
 }
 
+h2 {
+  color: #E0E0E0;
+  font-style: Bold;
+  font-size: 20px;
+  letter-spacing: 3%;
+  padding-bottom: 15px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 11px;
+  grid-auto-flow: column;
+  grid-auto-columns: 170px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.spotify-card {
+  border-radius: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.card-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.card-image img {
+  border-radius: 8px;
+}
+
+.card-text h3 {
+  color: #E0E0E0;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+.card-text p {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: rgb(137, 137, 137);
+}
+
 /*# sourceMappingURL=styles.css.map */
