@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MyMusic</title>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="logo" onclick="location.href='/'">MyMusic</div>
+
+    <div class="nav">
+      <div class="nav-item active">Home</div>
+      <div class="nav-item">Search</div>
+      <div class="nav-item">Your Library</div>
+    </div>
+
+    <input class="search" type="text" placeholder="Search..." />
+  </div>
+
+  <div class="layout">
+    <div class="sidebar">
+      <h2>Library</h2>
+
+      <ul class="menu">
+        <li class="menu-item active">Playlists</li>
+        <li class="menu-item">Artists</li>
+        <li class="menu-item">Albums</li>
+      </ul>
+
+      <a class="create-playlist">+ Create Playlist</a>
+
+      <div id="status">Online</div>
+      <div id="status">Synced</div>
+    </div>
+
+    <div class="main">
+      <h1>Featured</h1>
+
+      <div class="cards">
+        <div class="card">
+          <img src="cover.jpg">
+          <p class="card-title">Daily Mix</p>
+          <p class="card-desc">A mix for your day</p>
+          <span class="btn" role="button">Open</span>
+        </div>
+
+        <div class="card">
+          <img src="cover.jpg">
+          <p class="card-title">Focus</p>
+          <p class="card-desc">Stay productive</p>
+          <span class="btn" role="button">Open</span>
+        </div>
+
+        <div class="card">
+          <img src="cover.jpg">
+          <p class="card-title">Sleep</p>
+          <p class="card-desc">Relax and rest</p>
+          <span class="btn" role="button">Open</span>
+        </div>
+
+        <div class="card">
+          <img src="cover.jpg">
+          <p class="card-title">Workout</p>
+          <p class="card-desc">Get pumped</p>
+          <span class="btn" role="button">Open</span>
+        </div>
+      </div>
+
+      <h2>Top tracks</h2>
+
+      <div class="tracks">
+        <div class="track">
+          <img src="cover.jpg">
+          <div class="meta">
+            <p class="title">Song Name</p>
+            <p class="artist">Artist Name</p>
+          </div>
+          <div class="actions">
+            <span class="action" role="button">Play</span>
+            <span class="action" role="button">Like</span>
+          </div>
+        </div>
+
+        <div class="track">
+          <img src="cover.jpg">
+          <div class="meta">
+            <p class="title">Another Song</p>
+            <p class="artist">Another Artist</p>
+          </div>
+          <div class="actions">
+            <span class="action" role="button">Play</span>
+            <span class="action" role="button">Like</span>
+          </div>
+        </div>
+
+        <div class="track">
+          <img src="cover.jpg">
+          <div class="meta">
+            <p class="title">Third Song</p>
+            <p class="artist">Third Artist</p>
+          </div>
+          <div class="actions">
+            <span class="action" role="button">Play</span>
+            <span class="action" role="button">Like</span>
+          </div>
+        </div>
+      </div>
+
+      <h2>Newsletter</h2>
+      <form class="newsletter">
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com" />
+        <div class="submit" onclick="alert('submitted')">Subscribe</div>
+      </form>
+    </div>
+  </div>
+
+  <div class="player">
+    <p>Now playing: <span id="now">None</span></p>
+
+    <div class="controls">
+      <span class="control" role="button">Prev</span>
+      <span class="control" role="button">Play</span>
+      <span class="control" role="button">Next</span>
+    </div>
+
+    <input type="range" min="0" max="100" value="20" />
+  </div>
+</body>
+</html>
