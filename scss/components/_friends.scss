@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.right-sidebar{
+  position: fixed;
+  top: 65px;
+  right: -340px;
+  width: 358px;
+  bottom: 89px;
+
+  background: v.$bg-primary;
+  border: 1px solid rgba(32, 32, 32, 1);
+  border-radius: 8px;
+
+  transition: right 0.3s ease;
+}
+#friends-toggle:checked ~ .right-sidebar{
+  right: 0;
+}
+.main-views{
+  position: fixed;
+  top: 5px;
+  left: 1rem;
+  right: 0;
+  bottom: 89px;
+
+  overflow-y: auto;
+  transition: right 0.3s ease;
+}
+#friends-toggle:checked ~ .main-views{
+  right: 358px;
+}
+
+.friends-btn{
+  cursor:pointer;
+}
+#friends-toggle:checked ~ header .friends-icon {
+  fill: v.$text-secondary;
+  stroke: none;
+}
+
+
+.main-views,
+.right-sidebar{
+  transition: all 0.3s ease;
+}
+
+.control-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+        color: v.$text-primary;
+        padding: 20px;
+        @include m.font-style(500);
+    }
+}
+
+.close-icons {
+    display: flex;
+}
+
+.friends-play { 
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    h5 {
+        color: v.$text-primary;
+        @include m.font-style(400);
+    }
+    span {
+        color: v.$text-secondary;
+    }
+}
+
+.author-info {
+   @include m.flex;
+}

@@ -313,4 +313,93 @@ header {
   height: 36px;
 }
 
+.right-sidebar {
+  position: fixed;
+  top: 65px;
+  right: -340px;
+  width: 358px;
+  bottom: 89px;
+  background: rgb(6, 6, 6);
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 8px;
+  transition: right 0.3s ease;
+}
+
+#friends-toggle:checked ~ .right-sidebar {
+  right: 0;
+}
+
+.main-views {
+  position: fixed;
+  top: 5px;
+  left: 1rem;
+  right: 0;
+  bottom: 89px;
+  overflow-y: auto;
+  transition: right 0.3s ease;
+}
+
+#friends-toggle:checked ~ .main-views {
+  right: 358px;
+}
+
+.friends-btn {
+  cursor: pointer;
+}
+
+#friends-toggle:checked ~ header .friends-icon {
+  fill: rgb(137, 137, 137);
+  stroke: none;
+}
+
+.main-views,
+.right-sidebar {
+  transition: all 0.3s ease;
+}
+
+.control-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.control-panel h3 {
+  color: #E0E0E0;
+  padding: 20px;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+
+.close-icons {
+  display: flex;
+}
+
+.friends-play {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+.friends-play h5 {
+  color: #E0E0E0;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-style: Medium;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+.friends-play span {
+  color: rgb(137, 137, 137);
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -14,7 +14,7 @@
 }
 
 .player-left {
- @include mixins.flex();
+ @include mixins.flex;
   width: 30%;
   gap: 5px;
   padding-left: 70px;
