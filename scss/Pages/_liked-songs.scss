@@ -26,27 +26,32 @@
 .liked-songs-section {
     border: v.$border;
     border-radius: 10px;
-    margin: 52px 5px 0px 275px;
+    margin: 41px 5px 0px 275px;
+    height: 84vh;
 }
 
-.liked-songs-table {
-    width: 93%;
-    margin-left: 42px;
+
+.music-table {
+  width: 60%;
+  border-collapse: collapse;
+  color: v.$text-secondary;
+  font-size: 14px;
+  margin-left: 25px;
 }
+
+.music-table th,
+.music-table td {
+  padding: 5px;
+  text-align: left;
+}
+
 
 .info-row {
     color: v.$text-secondary;
     th {
-       border-bottom: 2px solid rgba(137, 137, 137, 0.15);
+border-bottom: v.$border;
        padding: 12px;
     }
-}
-
-.liked-songs-tbody {
-   td {
-    padding: 5px;
-    padding-top: 20px;
-   }
 }
 
 .song-info {
@@ -59,12 +64,57 @@
     }
 }
 
-
-// dashorebebi rogor gavuketo ro thead daemtxvas tbodys??
-
-h5 {
-    color: wheat;
+.music-table tbody tr:hover {
+  background: rgba(255,255,255,0.05);
 }
-td {
-    color: wheat;
+
+.song-name {
+    color: rgba(224, 224, 224, 1);
+}
+
+// changed design of aside for liked-songs page
+.like-cell svg {
+  width: 23px;
+  height: 20px;
+  fill: v.$text-accent;
+  cursor: pointer;
+}
+
+.liked-songs-nav{
+    background-color: rgba(32, 32, 32, 0.5);
+}
+.liked-songs-btn {
+    background-color: rgba(32, 32, 32, 1);
+    border-radius: 8px;
+}
+
+.home-btn-liked-songs{
+  gap: 10px;
+  a {
+   color: v.$text-secondary;
+   @include m.flex;
+    gap: 11px;
+    padding: 7px 90px 7px 25px;
+    border-radius: 8px;
+  }
+}
+
+
+.home-btn-liked-songs a:hover {
+  @include m.home-link-hover;
+}
+
+.nav-link {
+      gap: 10px;
+  a {
+   color: v.$text-secondary;
+   @include m.flex;
+    gap: 11px;
+    padding: 7px 80px 7px 20px;
+    border-radius: 8px;
+  }
+}
+
+.nav-link a:hover {
+    @include m.home-link-hover;
 }
