@@ -1,8 +1,9 @@
 @use "./variables" as v;
+
 @mixin border($radius: 8px, $color: rgba(32, 32, 32, 1)) {
-  border-radius: $radius;
-  border: 1px solid $color;
-  overflow: hidden; 
+    border-radius: $radius;
+    border: 1px solid $color;
+    overflow: hidden;
 }
 
 @mixin text-style($color: rgba(137, 137, 137, 1)) {
@@ -17,19 +18,19 @@
 }
 
 @mixin font-style ($font-weight: 500) {
-font-family: Satoshi;
-font-weight: $font-weight;
-font-style: Medium;
-font-size: 14px;
-leading-trim: NONE;
-line-height: 100%;
-letter-spacing: 3%;
+    font-family: Satoshi;
+    font-weight: $font-weight;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 3%;
 }
 
 
 @mixin home-link-hover {
-color: v.$text-primary;
-  cursor: pointer;
-  background-color: v.$btn-background;
-  border-radius: 8px;
+    color: v.$text-primary;
+    cursor: pointer;
+    background-color: v.$btn-background;
+    border-radius: 8px;
 }
