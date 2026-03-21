@@ -96,8 +96,8 @@
     a {
         color: v.$text-secondary;
         @include m.flex;
-        gap: 11px;
-        padding: 7px 90px 7px 25px;
+        gap: 10px;
+        padding: 0px 105px 7px 15px;
         border-radius: 8px;
     }
 }
@@ -105,18 +105,6 @@
 
 .home-btn-liked-songs a:hover {
     @include m.home-link-hover;
-}
-
-.nav-link {
-    gap: 10px;
-
-    a {
-        color: v.$text-secondary;
-        @include m.flex;
-        gap: 11px;
-        padding: 7px 80px 7px 20px;
-        border-radius: 8px;
-    }
 }
 
 .nav-link a:hover {
