@@ -521,4 +521,178 @@ header {
   border-radius: 16px;
 }
 
+.search-page {
+  padding: 41px 5px 90px 275px;
+}
+
+.search-page-container {
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 10px;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 26px;
+}
+.first-row h1 {
+  color: #E0E0E0;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+}
+
+.pinned-artists {
+  display: flex;
+  gap: 30px;
+  padding-left: 26px;
+}
+
+.artist-cards-search {
+  text-align: center;
+}
+.artist-cards-search span {
+  display: block;
+  color: #E0E0E0;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-style: Medium;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+  padding-top: 16px;
+}
+.artist-cards-search p {
+  color: rgb(137, 137, 137);
+  font-family: Satoshi;
+  font-weight: 400;
+  font-style: Medium;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+
+.muse {
+  display: block;
+  text-align: left;
+}
+
+.browse-all-section h1 {
+  color: #E0E0E0;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  padding: 30px 0 20px 26px;
+}
+.browse-all-section h2 {
+  font-family: Satoshi;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+  font-size: 18px;
+  color: #E0E0E0;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 26px 15px 26px;
+}
+.section-title h2 {
+  font-family: Satoshi;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 3%;
+  font-size: 18px;
+  color: #E0E0E0;
+}
+
+.container-discover-cards {
+  display: flex;
+  padding: 0 26px;
+  gap: 12px;
+}
+
+.discover-card {
+  position: relative;
+  border-radius: 10px;
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+}
+.discover-card img {
+  position: absolute;
+  width: 104px;
+  height: 104px;
+  bottom: -12px;
+  right: -10px;
+  border-radius: 5px;
+  transform: rotate(30deg);
+}
+.discover-card h3 {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+
+.discover-cards-color .discover-card:first-child,
+.discover-cards-color .discover-card:nth-child(3),
+.genres-cards .discover-card:nth-child(6) {
+  background-color: rgb(30, 50, 100);
+}
+
+.discover-cards-color .discover-card:nth-child(2),
+.discover-cards-color .discover-card:last-child {
+  background-color: rgb(186, 93, 7);
+}
+
+.discover-cards-color .discover-card:nth-child(4),
+.discover-cards-color .discover-card:nth-child(6) {
+  background-color: rgb(141, 103, 171);
+}
+
+.discover-cards-color .discover-card:nth-child(5) {
+  background-color: rgb(176, 40, 151);
+}
+
+.discover-cards-color .discover-card:nth-child(7) {
+  background-color: rgb(119, 119, 119);
+}
+
+.genres-cards .discover-card:first-child {
+  background-color: rgb(20, 138, 8);
+}
+
+.genres-cards .discover-card:nth-child(2) {
+  background-color: rgb(216, 64, 0);
+}
+
+.genres-cards .discover-card:nth-child(3) {
+  background-color: rgb(80, 55, 80);
+}
+
+.genres-cards .discover-card:nth-child(4) {
+  background-color: rgb(0, 100, 80);
+}
+
+.genres-cards .discover-card:nth-child(5),
+.genres-cards .discover-card:nth-child(7) {
+  background-color: rgb(233, 20, 41);
+}
+
+.genres-cards .discover-card:last-child {
+  background-color: rgb(83, 122, 161);
+}
+
 /*# sourceMappingURL=styles.css.map */

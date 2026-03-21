@@ -172,36 +172,41 @@
     </aside>
 
 
-    <main>
-        <div class="first-row">
-            <h1>Recent searches</h1>
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="11.7863" cy="20.2056" r="1.68378" fill="#898989" />
-                <circle cx="20.2053" cy="20.2056" r="1.68378" fill="#898989" />
-                <circle cx="28.6242" cy="20.2056" r="1.68378" fill="#898989" />
-            </svg>
-        </div>
+    <main class="search-page">
+        <div class="search-page-container">
+            <div class="first-row">
+                <h1>Recent searches</h1>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11.7863" cy="20.2056" r="1.68378" fill="#898989" />
+                    <circle cx="20.2053" cy="20.2056" r="1.68378" fill="#898989" />
+                    <circle cx="28.6242" cy="20.2056" r="1.68378" fill="#898989" />
+                </svg>
+            </div>
 
-        <section class="pinned-artinsts">
-            <h1>Recent searches</h1>
-            <div class="artist-cards-search">
-                <img src="./assets/images/Daft-punk3.png" alt="album cover">
-                <span>Daft Punk</span>
-            </div>
-            <div class="artist-cards-search">
-                <img src="./assets/images/david-bowie.png" alt="profile album cover">
-                <span>David Bowie</span>
-            </div>
-            <div class="artist-cards-search">
-                <img src="./assets/images/muse.png" alt="album cover">
-                <span>Daft Punk</span>
-                <span>Black Holes...</span>
-            </div>
-        </section>
+            <section class="pinned-artists">
+                <div class="artist-cards-search">
+                    <a href="#">
+                        <img src="./assets/images/Daft-punk3.png" alt="album cover">
+                    </a>
+                    <span>Daft Punk</span>
+                </div>
+                <div class="artist-cards-search">
+                    <a href="#">
+                        <img src="./assets/images/david-bowie.png" alt="profile album cover">
+                    </a>
+                    <span>David Bowie</span>
+                </div>
+                <div class="artist-cards-search">
+                    <a href="#">
+                        <img src="./assets/images/muse.png" alt="album cover">
+                    </a>
+                    <span class="muse">Black Holes...</span>
+                    <p class="muse">Muse</p>
+                </div>
+            </section>
 
-        <section class="browse-all-section">
-            <h1>Browse all</h1>
-            <div class="container-discover-cards">
+            <section class="browse-all-section">
+                <h1>Browse all</h1>
                 <div class="section-title">
                     <h2>Discover</h2>
                     <div class="scroll-icons">
@@ -221,43 +226,43 @@
                         </svg>
                     </div>
                 </div>
-                <div class="discover-card">
-                    <h3>Made For You</h3>
-                    <img src="./assets/images/rock mix.png" alt="rock mix album">
+                <div class="container-discover-cards discover-cards-color">
+                    <div class="discover-card">
+                        <h3>Made For You</h3>
+                        <img src="./assets/images/rock mix.png" alt="rock mix album">
+                    </div>
+                    <div class="discover-card">
+                        <h3>New Releases</h3>
+                        <img src="./assets/images/ariana-grande.png" alt="new albums">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Spotify Classics</h3>
+                        <img src="./assets/images/spotify-classics.png" alt="classics cover">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Charts</h3>
+                        <img src="./assets/images/charts.png" alt="top songs">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Trending</h3>
+                        <img src="./assets/images/trending.png" alt="trending songs">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Discover</h3>
+                        <img src="./assets/images/discover.png" alt="discover songs">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Spotify Singles</h3>
+                        <img src="./assets/images/spotify-singles.png" alt="new singles">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Decades</h3>
+                        <img src="./assets/images/decades.png" alt="girl on the album cover">
+                    </div>
                 </div>
-                <div class="discover-card">
-                    <h3>New Releases</h3>
-                    <img src="./assets/images/ariana-grande.png" alt="new albums">
-                </div>
-                <div class="discover-card">
-                    <h3>Spotify Classics</h3>
-                    <img src="./assets/images/spotify-classics.png" alt="classics cover">
-                </div>
-                <div class="discover-card">
-                    <h3>Charts</h3>
-                    <img src="./assets/images/charts.png" alt="top songs">
-                </div>
-                <div class="discover-card">
-                    <h3>Trending</h3>
-                    <img src="./assets/images/trending.png" alt="trending songs">
-                </div>
-                <div class="discover-card">
-                    <h3>Discover</h3>
-                    <img src="./assets/images/discover.png" alt="discover songs">
-                </div>
-                <div class="discover-card">
-                    <h3>Spotify Singles</h3>
-                    <img src="./assets/images/spotify-singles.png" alt="new singles">
-                </div>
-                <div class="discover-card">
-                    <h3>Decades</h3>
-                    <img src="./assets/images/decades.png" alt="girl on the album cover">
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="genres-cards">
-            <div class="container-discover-cards">
+            <section class="genres-cards">
                 <div class="section-title">
                     <h2>Genres</h2>
                     <div class="scroll-icons">
@@ -277,41 +282,42 @@
                         </svg>
                     </div>
                 </div>
-
-                <div class="discover-card">
-                    <h3>Pop</h3>
-                    <img src="./assets/images/pop.png" alt="pop songs">
+                <div class="container-discover-cards">
+                    <div class="discover-card">
+                        <h3>Pop</h3>
+                        <img src="./assets/images/pop.png" alt="pop songs">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Country</h3>
+                        <img src="./assets/images/country.png" alt="country songs">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Hip-Hop</h3>
+                        <img src="./assets/images/hip-hop.png" alt="hip-hop songs">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Rock</h3>
+                        <img src="./assets/images/rock.png" alt="Rock songs">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Indie</h3>
+                        <img src="./assets/images/indie.png" alt="indie songs">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Punk</h3>
+                        <img src="./assets/images/punk.png" alt="punk songs">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Metal</h3>
+                        <img src="./assets/images/metal.png" alt="metal songs">
+                    </div>
+                    <div class="discover-card">
+                        <h3>Instrumental</h3>
+                        <img src="./assets/images/instrumental.png" alt="instrumental songs">
+                    </div>
                 </div>
-                <div class="discover-card">
-                    <h3>Country</h3>
-                    <img src="./assets/images/country.png" alt="country songs">
-                </div>
-                <div class="discover-card">
-                    <h3>Hip-Hop</h3>
-                    <img src="./assets/images/hip-hop.png" alt="hip-hop songs">
-                </div>
-                <div class="discover-card">
-                    <h3>Rock</h3>
-                    <img src="./assets/images/rock.png" alt="Rock songs">
-                </div>
-                <div class="discover-card">
-                    <h3>Indie</h3>
-                    <img src="./assets/images/indie.png" alt="indie songs">
-                </div>
-                <div class="discover-card">
-                    <h3>Punk</h3>
-                    <img src="./assets/images/punk.png" alt="punk songs">
-                </div>
-                <div class="discover-card">
-                    <h3>Metal</h3>
-                    <img src="./assets/images/metal.png" alt="metal songs">
-                </div>
-                <div class="discover-card">
-                    <h3>Instrumental</h3>
-                    <img src="./assets/images/instrumental.png" alt="instrumental songs">
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer class="player">

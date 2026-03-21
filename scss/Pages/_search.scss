@@ -5,3 +5,166 @@
     background-color: v.$btn-background;
     border-radius: 16px;
 }
+
+.search-page {
+    padding: 41px 5px 90px 275px;
+}
+
+.search-page-container {
+    border: v.$border;
+    border-radius: 10px;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 26px;
+
+    h1 {
+        color: v.$text-primary;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 20px;
+    }
+}
+
+.pinned-artists {
+    display: flex;
+    gap: 30px;
+    padding-left: 26px;
+}
+
+.artist-cards-search {
+    text-align: center;
+
+    span {
+        display: block;
+        color: v.$text-primary;
+        @include m.font-style(400);
+        padding-top: 16px;
+    }
+
+    p {
+        color: v.$text-secondary;
+        @include m.font-style(400);
+
+    }
+}
+
+.muse {
+    display: block;
+    text-align: left;
+}
+
+.browse-all-section {
+    h1 {
+        color: v.$text-primary;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 20px;
+        padding: 30px 0 20px 26px;
+    }
+
+    h2 {
+        @include m.font-style(500);
+        font-size: 18px;
+        color: v.$text-primary;
+    }
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 26px 15px 26px;
+
+    h2 {
+        @include m.font-style(500);
+        font-size: 18px;
+        color: v.$text-primary;
+    }
+}
+
+
+// cards style 
+.container-discover-cards {
+    display: flex;
+    padding: 0 26px;
+    gap: 12px;
+}
+
+
+.discover-card {
+    position: relative;
+    border-radius: 10px;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        width: 104px;
+        height: 104px;
+        bottom: -12px;
+        right: -10px;
+        border-radius: 5px;
+        transform: rotate(30deg);
+
+    }
+
+    h3 {
+        padding: 20px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 3%;
+    }
+}
+
+.discover-cards-color .discover-card:first-child,
+ .discover-cards-color .discover-card:nth-child(3),
+ .genres-cards .discover-card:nth-child(6){
+    background-color: v.$discover-card-bg;
+}
+
+ .discover-cards-color .discover-card:nth-child(2), 
+ .discover-cards-color .discover-card:last-child{
+      background-color: rgba(186, 93, 7, 1);
+ }
+
+ .discover-cards-color .discover-card:nth-child(4), 
+ .discover-cards-color .discover-card:nth-child(6) {
+    background-color: rgba(141, 103, 171, 1);
+ }
+
+ .discover-cards-color .discover-card:nth-child(5) {
+    background-color: rgba(176, 40, 151, 1);
+ }
+
+ .discover-cards-color .discover-card:nth-child(7) {
+    background-color: rgba(119, 119, 119, 1);
+ }
+
+ .genres-cards .discover-card:first-child {
+background-color: rgba(20, 138, 8, 1);
+ }
+
+ .genres-cards .discover-card:nth-child(2) {
+    background-color: rgba(216, 64, 0, 1);
+ }
+
+  .genres-cards .discover-card:nth-child(3) {
+    background-color: rgba(80, 55, 80, 1);
+  }
+
+  .genres-cards .discover-card:nth-child(4) {
+    background-color: rgba(0, 100, 80, 1);
+  }
+
+  .genres-cards .discover-card:nth-child(5),
+  .genres-cards .discover-card:nth-child(7) {
+    background-color: v.$genres-card-bg;
+  }
+  .genres-cards .discover-card:last-child {
+    background-color:rgba(83, 122, 161, 1);
+  }
