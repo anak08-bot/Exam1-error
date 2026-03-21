@@ -156,6 +156,7 @@ header {
   background-color: rgba(32, 32, 32, 0.5);
   border-radius: 8px;
   cursor: pointer;
+  color: #E0E0E0;
 }
 
 .search-container {
@@ -509,13 +510,6 @@ header {
 }
 
 .home-btn-liked-songs a:hover {
-  color: #E0E0E0;
-  cursor: pointer;
-  background-color: rgba(32, 32, 32, 0.5);
-  border-radius: 8px;
-}
-
-.nav-link a:hover {
   color: #E0E0E0;
   cursor: pointer;
   background-color: rgba(32, 32, 32, 0.5);
