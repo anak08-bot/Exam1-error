@@ -9,7 +9,164 @@
 </head>
 
 <body>
-    <header></header>
+    <input type="checkbox" id="friends-toggle" class="visually-hidden">
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li class="home-btn-liked-songs">
+                    <a href="./index.html">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.2566 28.6243H28.6242C29.5541 28.6243 30.3079 27.8704 30.3079 26.9405V19.432C30.3079 18.9368 30.0899 18.4666 29.7118 18.1467L21.2929 11.023C20.6651 10.4918 19.7454 10.4918 19.1176 11.023L10.6987 18.1467C10.3206 18.4666 10.1025 18.9368 10.1025 19.432V26.9405C10.1025 27.8704 10.8564 28.6243 11.7863 28.6243H15.1539"
+                                stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link">
+                        <img src="./assets/Icons/discover.png" alt="Discover">
+                        Discover</a>
+                </li>
+
+                <li>
+                    <div class="search-container search-bar">
+                        <a href="./search.html">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.7357 24.361C26.2733 22.7925 27.2214 20.644 27.2214 18.274C27.2214 13.4715 23.3282 9.57837 18.5257 9.57837C13.7233 9.57837 9.83008 13.4715 9.83008 18.274C9.83008 23.0765 13.7233 26.9697 18.5257 26.9697C20.9582 26.9697 23.1575 25.9709 24.7357 24.361ZM24.7357 24.361L29.8301 29.5784" stroke="#E0E0E0" stroke-width="2.02054" stroke-linecap="round"/>
+</svg>
+
+                        </a>
+                        <input type="text" placeholder="Search" class="search-input" />
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="action-icons">
+            <a href=""><img src="./assets/Icons/1bell.png" alt="bell" /></a>
+            <a href=""><img src="./assets/Icons/2lock.png" alt="lock" /></a>
+
+            <label for="friends-toggle" class="friends-btn">
+                <svg class="friends-icon" width="35" height="26" viewBox="0 0 35 26" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M26.5729 6.73524C26.5729 8.5951 25.0652 10.1028 23.2054 10.1028C21.3455 10.1028 19.8378 8.5951 19.8378 6.73524C19.8378 4.87539 21.3455 3.36768 23.2054 3.36768C25.0652 3.36768 26.5729 4.87539 26.5729 6.73524Z"
+                        stroke="#898989" stroke-width="2.02054" />
+                    <path
+                        d="M16.286 15.8383L17.0358 15.3384C18.8628 14.1204 21.0095 13.4705 23.2053 13.4705C25.4012 13.4705 27.5478 14.1204 29.3749 15.3384L30.1247 15.8383C31.0615 16.4629 31.6242 17.5143 31.6242 18.6403V20.3178C31.6242 21.1858 30.9206 21.8894 30.0527 21.8894H23.2053H16.3579C15.49 21.8894 14.7864 21.1858 14.7864 20.3178V18.6403C14.7864 17.5143 15.3491 16.4629 16.286 15.8383Z"
+                        stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M15.1541 6.73524C15.1541 8.5951 13.6464 10.1028 11.7865 10.1028C9.92666 10.1028 8.41895 8.5951 8.41895 6.73524C8.41895 4.87539 9.92666 3.36768 11.7865 3.36768C13.6464 3.36768 15.1541 4.87539 15.1541 6.73524Z"
+                        stroke="#898989" stroke-width="2.02054" />
+                    <path
+                        d="M11.7865 13.4705C9.59068 13.4705 7.44399 14.1204 5.61695 15.3384L4.86716 15.8383C3.93031 16.4629 3.36758 17.5143 3.36758 18.6403V20.3178C3.36758 21.1858 4.07118 21.8894 4.93912 21.8894H11"
+                        stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </label>
+            <a href=""><img src="./assets/Icons/4settings.png" alt="settings" /></a>
+            <a href=""><img src="./assets/Icons/5theme.png" alt="theme" /></a>
+        </div>
+    </header>
+
+    <!-- friends -toggle button that comes from the right side after clicking the icon -->
+    <aside class="right-sidebar">
+        <div class="control-panel">
+            <h3>Friends Activity</h3>
+
+            <div class="close-icons">
+                <img src="./assets/Icons/add-frinds.png" alt="Add friends">
+                <label for="friends-toggle">
+                    <img src="./assets/Icons/close.png" alt="Close">
+                </label>
+            </div>
+        </div>
+
+        <div class="friends-play">
+            <div class="play-pic">
+                <img src="./assets/Icons/friend1.png">
+            </div>
+            <div class="info-friends">
+                <h5>FriendlyMusicListener</h5>
+                <div class="author-info"> <img src="./assets/Icons/playing.png"> <span>Goosebumps · Travis Scott</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="friends-play">
+            <div class="play-pic">
+                <img src="./assets/Icons/friend2.png">
+            </div>
+            <div class="info-friends">
+                <h5>AverageMusicEnjoyer</h5>
+                <div class="author-info"> <img src="./assets/Icons/playing.png"> <span>Get Lucky · Daft Punk</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="friends-play">
+            <div class="play-pic">
+                <img src="./assets/Icons/friend3.png">
+            </div>
+            <div class="info-friends">
+                <h5>MusicEnthusiast</h5>
+                <span> 1h would he · joji</span>
+            </div>
+        </div>
+
+        <div class="friends-play">
+            <div class="play-pic">
+                <img src="./assets/Icons/friend4.png">
+            </div>
+            <div class="info-friends">
+                <h5>IListenToMusic56</h5>
+                <span> 6h Rockstar · Post Malone</span>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="sidebar">
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="library">
+          <a href="#" class="nav-link"><img src="./assets/Icons/my-library.png" alt="library" />My
+            Library</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link"><img src="./assets/Icons/pin.png" alt="pins" />Pins<img class="vector"
+              src="./assets/Icons/Vector.png" /></a>
+        </li>
+        <li>
+          <a href="#" class="nav-link"><img src="./assets/Icons/playlist.png" alt="playlists" />Playlists<img
+              class="vector" src="./assets/Icons/Vector.png" /></a>
+        </li>
+        <li>
+          <a href="./liked-songs.html" class="nav-link"><img src="./assets/Icons/liked-songs.png"
+              alt="liked-songs" />Liked songs</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link"><img src="./assets/Icons/saves.png" alt="saves" />Saves</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link"><img src="./assets/Icons/albums.png" alt="albums" />Albums</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link"><img src="./assets/Icons/folders.png" alt="folders" />Folders</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link"><img src="./assets/Icons/podcasts.png" alt="podcasts" />Podcasts</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link"><img src="./assets/Icons/audiobooks.png" alt="audiobooks" />Audiobooks</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link"><img src="./assets/Icons/artists.png" alt="artists" />Artists</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
 
     <main>
         <div class="first-row">
@@ -20,9 +177,170 @@
                 <circle cx="28.6242" cy="20.2056" r="1.68378" fill="#898989" />
             </svg>
         </div>
+
+        <section class="pinned-artinsts">
+            <h1>Recent searches</h1>
+            <div class="artist-cards-search">
+                <img src="./assets/images/Daft-punk3.png" alt="album cover">
+                <span>Daft Punk</span>
+            </div>
+            <div class="artist-cards-search">
+                <img src="./assets/images/david-bowie.png" alt="profile album cover">
+                <span>David Bowie</span>
+            </div>
+            <div class="artist-cards-search">
+                <img src="./assets/images/muse.png" alt="album cover">
+                <span>Daft Punk</span>
+                <span>Black Holes...</span>
+            </div>
+        </section>
+
+        <section class="browse-all-section">
+            <h1>Browse all</h1>
+            <div class="container-discover-cards">
+                 <div class="section-title">
+                    <h2>Discover</h2>
+                    <div class="scroll-icons">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path
+                                    d="M27.7822 20.2056H13.4701M13.4701 20.2056L19.3633 26.0989M13.4701 20.2056L19.3633 14.3124"
+                                    stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.4702 20.2055H27.7824M27.7824 20.2055L21.8891 14.3123M27.7824 20.2055L21.8891 26.0987"
+                                stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="discover-card">
+                    <h3>Made For You</h3>
+                    <img src="./assets/images/rock mix.png" alt="rock mix album">
+                </div>
+                <div class="discover-card">
+                    <h3>New Releases</h3>
+                    <img src="./assets/images/ariana-grande.png" alt="new albums">
+                </div>
+                <div class="discover-card">
+                    <h3>Spotify Classics</h3>
+                    <img src="./assets/images/spotify-classics.png" alt="classics cover">
+                </div>
+                <div class="discover-card">
+                    <h3>Charts</h3>
+                    <img src="./assets/images/charts.png" alt="top songs">
+                </div>
+                <div class="discover-card">
+                    <h3>Trending</h3>
+                    <img src="./assets/images/trending.png" alt="trending songs">
+                </div>
+                <div class="discover-card">
+                    <h3>Discover</h3>
+                    <img src="./assets/images/discover.png" alt="discover songs">
+                </div>
+                <div class="discover-card">
+                    <h3>Spotify Singles</h3>
+                    <img src="./assets/images/spotify-singles.png" alt="new singles">
+                </div>
+                <div class="discover-card">
+                    <h3>Decades</h3>
+                    <img src="./assets/images/decades.png" alt="girl on the album cover">
+                </div>
+            </div>
+        </section>
+
+        <section class="genres-cards">
+            <div class="container-discover-cards">
+                <div class="section-title">
+                    <h2>Genres</h2>
+                    <div class="scroll-icons">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path
+                                    d="M27.7822 20.2056H13.4701M13.4701 20.2056L19.3633 26.0989M13.4701 20.2056L19.3633 14.3124"
+                                    stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.4702 20.2055H27.7824M27.7824 20.2055L21.8891 14.3123M27.7824 20.2055L21.8891 26.0987"
+                                stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="discover-card">
+                    <h3>Pop</h3>
+                    <img src="./assets/images/pop.png" alt="pop songs">
+                </div>
+                <div class="discover-card">
+                    <h3>Country</h3>
+                    <img src="./assets/images/country.png" alt="country songs">
+                </div>
+                <div class="discover-card">
+                    <h3>Hip-Hop</h3>
+                    <img src="./assets/images/hip-hop.png" alt="hip-hop songs">
+                </div>
+                <div class="discover-card">
+                    <h3>Rock</h3>
+                    <img src="./assets/images/rock.png" alt="Rock songs">
+                </div>
+                <div class="discover-card">
+                    <h3>Indie</h3>
+                    <img src="./assets/images/indie.png" alt="indie songs">
+                </div>
+                <div class="discover-card">
+                    <h3>Punk</h3>
+                    <img src="./assets/images/punk.png" alt="punk songs">
+                </div>
+                <div class="discover-card">
+                    <h3>Metal</h3>
+                    <img src="./assets/images/metal.png" alt="metal songs">
+                </div>
+                <div class="discover-card">
+                    <h3>Instrumental</h3>
+                    <img src="./assets/images/instrumental.png" alt="instrumental songs">
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+     <footer class="player">
+    <div class="player-left">
+      <div class="on-off">
+        <img src="./assets/Icons/playing-icon.png" />
+      </div>
+      <img src="./assets/Icons/before.png" />
+      <img src="./assets/Icons/next.png" />
+      <img src="./assets/Icons/shuffle.png" />
+      <img src="./assets/Icons/on-repeat.png" />
+      <img src="./assets/Icons/line.png" />
+      <img src="./assets/Icons/volume.png" />
+    </div>
+
+    <div class="player-center">
+      <img src="./assets/Icons/daft-punk-play.png" alt="daft-punk" />
+      <div class="track-info">
+        <div class="track-name">Get Lucky</div>
+        <div class="track-info">Daft Punk</div>
+        <div class="track-info">Random Access Memories</div>
+      </div>
+    </div>
+    <div class="player-right">
+      <img src="./assets/Icons/liked-songs.png" />
+      <img src="./assets/Icons/add-playlist.png" />
+      <img src="./assets/Icons/lyrics.png" />
+      <img src="./assets/Icons/devices.png" />
+      <img class="more" src="./assets/Icons/play-more.png" />
+      <img src="./assets/Icons/DJ.png" />
+      <img src="./assets/Icons/queue.png" />
+    </div>
+  </footer>
 </body>
 
 </html>

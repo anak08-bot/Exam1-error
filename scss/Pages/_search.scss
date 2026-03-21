@@ -1,2 +1,7 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
+
+.search-bar {
+    background-color: v.$btn-background;
+    border-radius: 16px;
+}
