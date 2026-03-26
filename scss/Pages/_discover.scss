@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.discover-link {
+    background-color: v.$btn-background;
+   border-radius: 8px;
+  cursor: pointer;
+  color: v.$text-primary;
+  
+}

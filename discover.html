@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify - search </title>
+    <title>Discover - Spotify</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -24,26 +24,23 @@
                 </li>
 
                 <li>
-                    <a href="./discover.html" class="nav-link">
-                        <img src="./assets/Icons/discover.png" alt="Discover">
+                    <a href="#" class="nav-link discover-link">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.5898 29.5869C21.8154 25.2217 25.2266 21.8105 29.5918 20.585L31.3867 20.0811L29.5918 19.5771C25.2266 18.3516 21.8154 14.9404 20.5898 10.5752L20.0859 8.78027L19.582 10.5752C18.3565 14.9404 14.9452 18.3516 10.5801 19.5771L8.78516 20.0811L10.5801 20.585C14.9452 21.8105 18.3565 25.2217 19.582 29.5869L20.0859 31.3818L20.5898 29.5869Z"
+                                fill="#E0E0E0" stroke="#E0E0E0" stroke-width="2" />
+                        </svg>
                         Discover</a>
                 </li>
 
                 <li>
-                    <div class="search-container search-bar">
+                    <div class="search-container">
                         <a href="./search.html">
-                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M24.7357 24.361C26.2733 22.7925 27.2214 20.644 27.2214 18.274C27.2214 13.4715 23.3282 9.57837 18.5257 9.57837C13.7233 9.57837 9.83008 13.4715 9.83008 18.274C9.83008 23.0765 13.7233 26.9697 18.5257 26.9697C20.9582 26.9697 23.1575 25.9709 24.7357 24.361ZM24.7357 24.361L29.8301 29.5784"
-                                    stroke="#E0E0E0" stroke-width="2.02054" stroke-linecap="round" />
-                            </svg>
-
+                            <img class="search-icon" src="./assets/Icons/search.png" alt="Search">
                         </a>
                         <input type="text" placeholder="Search" class="search-input" />
                     </div>
                 </li>
-            </ul>
         </nav>
 
         <div class="action-icons">
@@ -171,153 +168,8 @@
         </nav>
     </aside>
 
+    <main>
 
-    <main class="search-page">
-        <div class="search-page-container">
-            <div class="first-row">
-                <h1>Recent searches</h1>
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="11.7863" cy="20.2056" r="1.68378" fill="#898989" />
-                    <circle cx="20.2053" cy="20.2056" r="1.68378" fill="#898989" />
-                    <circle cx="28.6242" cy="20.2056" r="1.68378" fill="#898989" />
-                </svg>
-            </div>
-
-            <section class="pinned-artists">
-                <div class="artist-cards-search">
-                    <a href="#">
-                        <img src="./assets/images/Daft-punk3.png" alt="album cover">
-                    </a>
-                    <span>Daft Punk</span>
-                </div>
-                <div class="artist-cards-search">
-                    <a href="#">
-                        <img src="./assets/images/david-bowie.png" alt="profile album cover">
-                    </a>
-                    <span>David Bowie</span>
-                </div>
-                <div class="artist-cards-search">
-                    <a href="#">
-                        <img src="./assets/images/muse.png" alt="album cover">
-                    </a>
-                    <span class="muse">Black Holes...</span>
-                    <p class="muse">Muse</p>
-                </div>
-            </section>
-
-            <section class="browse-all-section">
-                <h1>Browse all</h1>
-                <div class="section-title">
-                    <h2>Discover</h2>
-                    <div class="scroll-icons">
-                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path
-                                    d="M27.7822 20.2056H13.4701M13.4701 20.2056L19.3633 26.0989M13.4701 20.2056L19.3633 14.3124"
-                                    stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </g>
-                        </svg>
-                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13.4702 20.2055H27.7824M27.7824 20.2055L21.8891 14.3123M27.7824 20.2055L21.8891 26.0987"
-                                stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="container-discover-cards discover-cards-color">
-                    <div class="discover-card">
-                        <h3>Made For You</h3>
-                        <img src="./assets/images/rock mix.png" alt="rock mix album">
-                    </div>
-                    <div class="discover-card">
-                        <h3>New Releases</h3>
-                        <img src="./assets/images/ariana-grande.png" alt="new albums">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Spotify Classics</h3>
-                        <img src="./assets/images/spotify-classics.png" alt="classics cover">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Charts</h3>
-                        <img src="./assets/images/charts.png" alt="top songs">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Trending</h3>
-                        <img src="./assets/images/trending.png" alt="trending songs">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Discover</h3>
-                        <img src="./assets/images/discover.png" alt="discover songs">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Spotify Singles</h3>
-                        <img src="./assets/images/spotify-singles.png" alt="new singles">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Decades</h3>
-                        <img src="./assets/images/decades.png" alt="girl on the album cover">
-                    </div>
-                </div>
-            </section>
-
-            <section class="genres-cards">
-                <div class="section-title">
-                    <h2>Genres</h2>
-                    <div class="scroll-icons">
-                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.5">
-                                <path
-                                    d="M27.7822 20.2056H13.4701M13.4701 20.2056L19.3633 26.0989M13.4701 20.2056L19.3633 14.3124"
-                                    stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </g>
-                        </svg>
-                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13.4702 20.2055H27.7824M27.7824 20.2055L21.8891 14.3123M27.7824 20.2055L21.8891 26.0987"
-                                stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="container-discover-cards genres-cards">
-                    <div class="discover-card">
-                        <h3>Pop</h3>
-                        <img src="./assets/images/pop.png" alt="pop songs">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Country</h3>
-                        <img src="./assets/images/country.png" alt="country songs">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Hip-Hop</h3>
-                        <img src="./assets/images/hip-hop.png" alt="hip-hop songs">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Rock</h3>
-                        <img src="./assets/images/rock.png" alt="Rock songs">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Indie</h3>
-                        <img src="./assets/images/indie.png" alt="indie songs">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Punk</h3>
-                        <img src="./assets/images/punk.png" alt="punk songs">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Metal</h3>
-                        <img src="./assets/images/metal.png" alt="metal songs">
-                    </div>
-                    <div class="discover-card">
-                        <h3>Instrumental</h3>
-                        <img src="./assets/images/instrumental.png" alt="instrumental songs">
-                    </div>
-                </div>
-            </section>
-        </div>
     </main>
 
     <footer class="player">
