@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+main {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  ::-webkit-scrollbar, ::-webkit-scrollbar-button {
+    display: none;
+  }
+}
+
 ul,
 ol {
   list-style: none;

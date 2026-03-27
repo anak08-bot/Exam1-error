@@ -1,4 +1,5 @@
 @use "./variables" as v;
+@use "./mixins" as M;
 
 @mixin border($radius: 8px, $color: rgba(32, 32, 32, 1)) {
     border-radius: $radius;
@@ -34,3 +35,20 @@
     background-color: v.$btn-background;
     border-radius: 8px;
 }
+@mixin arrows {
+    display: flex;
+    gap: 12px;
+    
+  }
+
+ @mixin arrow-btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+    background: none;
+    border: none;
+    margin-left: auto;
+  }
+  

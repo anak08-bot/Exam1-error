@@ -6,6 +6,14 @@
   padding: 0;
 }
 
+main {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+main ::-webkit-scrollbar, main ::-webkit-scrollbar-button {
+  display: none;
+}
+
 ul,
 ol {
   list-style: none;
@@ -65,6 +73,16 @@ p {
 
 a {
   font-size: 14px;
+}
+
+.arrow-btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+  background: none;
+  border: none;
 }
 
 .sidebar {
@@ -693,6 +711,129 @@ header {
 
 .genres-cards .discover-card:last-child {
   background-color: rgb(83, 122, 161);
+}
+
+.made-foru-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+.made-foru-header .arrows {
+  display: flex;
+  gap: 12px;
+}
+.made-foru-header .arrow-btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+  background: none;
+  border: none;
+}
+.made-foru-header .more-icon {
+  width: 20px;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.made-foru-header h2 {
+  color: #E0E0E0;
+  font-style: Bold;
+  font-size: 20px;
+  letter-spacing: 3%;
+  padding-bottom: 15px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 11px;
+  grid-auto-flow: column;
+  grid-auto-columns: 170px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 100px;
+  padding-top: 9px;
+}
+
+.spotify-card {
+  height: 181px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 -6px 0 -1px rgba(149, 230, 211, 0.3), 0 -12px 0 -3px rgba(149, 230, 211, 0.15);
+}
+
+.card-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.card-image img {
+  border-radius: 8px;
+}
+
+.card-text h3 {
+  color: #E0E0E0;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.card-text h3 .track-count {
+  color: rgb(244, 184, 189);
+}
+.card-text p {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: rgb(137, 137, 137);
+}
+.card-text .your-favourite-artists {
+  padding: 20px 0;
+}
+
+h2 {
+  color: #E0E0E0 !important;
+  font-style: Bold;
+  font-size: 20px;
+  letter-spacing: 3%;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.artists-grid {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.artist-card {
+  width: 160px;
+  text-align: center;
+}
+
+.round-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+p {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: rgb(137, 137, 137);
 }
 
 /*# sourceMappingURL=styles.css.map */
