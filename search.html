@@ -10,7 +10,32 @@
 
 <body>
     <input type="checkbox" id="friends-toggle" class="visually-hidden">
+
     <header>
+
+        <!-- responsive for mobile version only -->
+        <div class="search-header">
+            <div class="search-section">
+                <input type="text" placeholder="What do you want to play?" class="search-input-mv" />
+                <svg class="search-btn" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.9466 13.8388C15.2939 12.4644 16.1247 10.5817 16.1247 8.505C16.1247 4.29673 12.7133 0.885254 8.505 0.885254C4.29673 0.885254 0.885254 4.29673 0.885254 8.505C0.885254 12.7133 4.29673 16.1247 8.505 16.1247C10.6365 16.1247 12.5637 15.2495 13.9466 13.8388ZM13.9466 13.8388L18.4107 18.4107"
+                        stroke="#898989" stroke-opacity="0.5" stroke-width="1.77054" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <div class="photo-search">
+                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.57837 16.8337V26.3244C7.57837 27.8585 8.82202 29.1022 10.3561 29.1022H29.8006C31.3347 29.1022 32.5784 27.8585 32.5784 26.3244V16.8337C32.5784 15.2995 31.3347 14.0559 29.8006 14.0559H28.3507C27.8169 14.0559 27.3091 13.8256 26.9575 13.424L25.0236 11.2155C24.6719 10.814 24.1641 10.5837 23.6304 10.5837H16.1885C15.6548 10.5837 15.147 10.814 14.7953 11.2155L12.8614 13.424C12.5098 13.8256 12.002 14.0559 11.4682 14.0559H10.3561C8.82202 14.0559 7.57837 15.2995 7.57837 16.8337Z"
+                        stroke="#898989" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="20.0784" cy="20.306" r="4.16667" stroke="#898989" stroke-width="2" />
+                </svg>
+            </div>
+        </div>
+        <!--  -->
+
         <nav class="main-nav">
             <ul>
                 <li class="home-btn-liked-songs">
@@ -24,7 +49,7 @@
                 </li>
 
                 <li>
-                    <a href="#" class="nav-link">
+                    <a href="./discover.html" class="nav-link">
                         <img src="./assets/Icons/discover.png" alt="Discover">
                         Discover</a>
                 </li>
@@ -282,7 +307,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="container-discover-cards">
+                <div class="container-discover-cards genres-cards">
                     <div class="discover-card">
                         <h3>Pop</h3>
                         <img src="./assets/images/pop.png" alt="pop songs">
@@ -351,6 +376,88 @@
             <img src="./assets/Icons/queue.png" />
         </div>
     </footer>
+
+    <!-- mobile version footer -->
+    <div class="footer-mobile">
+        <div class="player-mobile">
+            <div class="album-picture">
+                <img src="./assets/images/daft-punk.png" alt="daft punk">
+            </div>
+            <div class="album-info-text">
+                <h5>Get Lucky (feat. Pharrell Williams)</h5>
+                <p>Daft Punk</p>
+            </div>
+            <div class="playing-icons">
+                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="20" height="20" rx="3" transform="matrix(1 0 0 -1 9.82703 31.3296)" stroke="#898989"
+                        stroke-width="2" stroke-linejoin="round" />
+                    <path
+                        d="M11.827 11.3296H27.827C27.827 9.67274 26.4839 8.32959 24.827 8.32959H14.827C13.1702 8.32959 11.827 9.67274 11.827 11.3296Z"
+                        stroke="#898989" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M15.827 21.3296H19.827M23.827 21.3296H19.827M19.827 21.3296V17.3296M19.827 21.3296V25.3296"
+                        stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M28.0942 18.2343C29.3511 18.9599 29.3511 20.774 28.0942 21.4997L18.1966 27.2141C16.9398 27.9397 15.3687 27.0327 15.3687 25.5814L15.3687 14.1526C15.3687 12.7013 16.9398 11.7943 18.1966 12.5199L28.0942 18.2343Z"
+                        fill="#898989" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="mobile-navbar">
+            <div class="nav-icons">
+                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M25.2567 28.6242H28.6243C29.5542 28.6242 30.3081 27.8703 30.3081 26.9404V19.4319C30.3081 18.9366 30.09 18.4665 29.7119 18.1465L21.293 11.0228C20.6652 10.4916 19.7455 10.4916 19.1177 11.0228L10.6988 18.1465C10.3207 18.4665 10.1027 18.9366 10.1027 19.4319V26.9404C10.1027 27.8703 10.8565 28.6242 11.7864 28.6242H15.154"
+                        stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p>Home</p>
+            </div>
+            <div class="nav-icons">
+                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.5903 29.5869C21.8159 25.2217 25.2271 21.8105 29.5923 20.585L31.3872 20.0811L29.5923 19.5771C25.2271 18.3516 21.8159 14.9404 20.5903 10.5752L20.0864 8.78027L19.5825 10.5752C18.357 14.9404 14.9457 18.3516 10.5806 19.5771L8.78564 20.0811L10.5806 20.585C14.9457 21.8105 18.357 25.2217 19.5825 29.5869L20.0864 31.3818L20.5903 29.5869Z"
+                        stroke="#898989" stroke-width="2" />
+                </svg>
+                <p>Discover</p>
+            </div>
+            <div class="nav-icons">
+                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24.738 24.3607C26.2756 22.7923 27.2237 20.6437 27.2237 18.2738C27.2237 13.4713 23.3305 9.57812 18.528 9.57812C13.7256 9.57812 9.8324 13.4713 9.8324 18.2738C9.8324 23.0763 13.7256 26.9694 18.528 26.9694C20.9606 26.9694 23.1598 25.9706 24.738 24.3607ZM24.738 24.3607L29.8324 29.5781"
+                        stroke="#898989" stroke-width="2.02054" stroke-linecap="round" />
+                    <circle cx="18.5324" cy="18.2781" r="5.7" fill="#898989" />
+                </svg>
+                <p>Search</p>
+            </div>
+            <div class="nav-icons">
+
+                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.562 11.562V28.8489" stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M17.3243 11.562V28.8489" stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M23.0865 28.8489V11.562L28.8488 15.5513V28.8489H23.0865Z" stroke="#898989"
+                        stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p>Library</p>
+            </div>
+            <div class="nav-icons">
+
+                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.573 13.4706C23.573 15.3305 22.0653 16.8382 20.2055 16.8382C18.3456 16.8382 16.8379 15.3305 16.8379 13.4706C16.8379 11.6107 18.3456 10.103 20.2055 10.103C22.0653 10.103 23.573 11.6107 23.573 13.4706Z"
+                        stroke="#898989" stroke-width="2.02054" />
+                    <path
+                        d="M13.2861 22.5734L14.0359 22.0736C15.8629 20.8555 18.0096 20.2056 20.2054 20.2056C22.4012 20.2056 24.5479 20.8555 26.375 22.0736L27.1248 22.5734C28.0616 23.198 28.6243 24.2494 28.6243 25.3754V27.053C28.6243 27.9209 27.9207 28.6245 27.0528 28.6245H20.2054H13.358C12.4901 28.6245 11.7865 27.9209 11.7865 27.053V25.3754C11.7865 24.2494 12.3492 23.198 13.2861 22.5734Z"
+                        stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p>Me</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

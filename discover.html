@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Spotify</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <input type="checkbox" id="friends-toggle" class="visually-hidden">
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li class="home-btn-liked-songs">
+                    <a href="./index.html">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.2566 28.6243H28.6242C29.5541 28.6243 30.3079 27.8704 30.3079 26.9405V19.432C30.3079 18.9368 30.0899 18.4666 29.7118 18.1467L21.2929 11.023C20.6651 10.4918 19.7454 10.4918 19.1176 11.023L10.6987 18.1467C10.3206 18.4666 10.1025 18.9368 10.1025 19.432V26.9405C10.1025 27.8704 10.8564 28.6243 11.7863 28.6243H15.1539"
+                                stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link discover-link">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.5898 29.5869C21.8154 25.2217 25.2266 21.8105 29.5918 20.585L31.3867 20.0811L29.5918 19.5771C25.2266 18.3516 21.8154 14.9404 20.5898 10.5752L20.0859 8.78027L19.582 10.5752C18.3565 14.9404 14.9452 18.3516 10.5801 19.5771L8.78516 20.0811L10.5801 20.585C14.9452 21.8105 18.3565 25.2217 19.582 29.5869L20.0859 31.3818L20.5898 29.5869Z"
+                                fill="#E0E0E0" stroke="#E0E0E0" stroke-width="2" />
+                        </svg>
+                        Discover</a>
+                </li>
+
+                <li>
+                    <div class="search-container">
+                        <a href="./search.html">
+                            <img class="search-icon" src="./assets/Icons/search.png" alt="Search">
+                        </a>
+                        <input type="text" placeholder="Search" class="search-input" />
+                    </div>
+                </li>
+        </nav>
+
+        <div class="action-icons">
+            <a href=""><img src="./assets/Icons/1bell.png" alt="bell" /></a>
+            <a href=""><img src="./assets/Icons/2lock.png" alt="lock" /></a>
+
+            <label for="friends-toggle" class="friends-btn">
+                <svg class="friends-icon" width="35" height="26" viewBox="0 0 35 26" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M26.5729 6.73524C26.5729 8.5951 25.0652 10.1028 23.2054 10.1028C21.3455 10.1028 19.8378 8.5951 19.8378 6.73524C19.8378 4.87539 21.3455 3.36768 23.2054 3.36768C25.0652 3.36768 26.5729 4.87539 26.5729 6.73524Z"
+                        stroke="#898989" stroke-width="2.02054" />
+                    <path
+                        d="M16.286 15.8383L17.0358 15.3384C18.8628 14.1204 21.0095 13.4705 23.2053 13.4705C25.4012 13.4705 27.5478 14.1204 29.3749 15.3384L30.1247 15.8383C31.0615 16.4629 31.6242 17.5143 31.6242 18.6403V20.3178C31.6242 21.1858 30.9206 21.8894 30.0527 21.8894H23.2053H16.3579C15.49 21.8894 14.7864 21.1858 14.7864 20.3178V18.6403C14.7864 17.5143 15.3491 16.4629 16.286 15.8383Z"
+                        stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M15.1541 6.73524C15.1541 8.5951 13.6464 10.1028 11.7865 10.1028C9.92666 10.1028 8.41895 8.5951 8.41895 6.73524C8.41895 4.87539 9.92666 3.36768 11.7865 3.36768C13.6464 3.36768 15.1541 4.87539 15.1541 6.73524Z"
+                        stroke="#898989" stroke-width="2.02054" />
+                    <path
+                        d="M11.7865 13.4705C9.59068 13.4705 7.44399 14.1204 5.61695 15.3384L4.86716 15.8383C3.93031 16.4629 3.36758 17.5143 3.36758 18.6403V20.3178C3.36758 21.1858 4.07118 21.8894 4.93912 21.8894H11"
+                        stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </label>
+            <a href=""><img src="./assets/Icons/4settings.png" alt="settings" /></a>
+            <a href=""><img src="./assets/Icons/5theme.png" alt="theme" /></a>
+        </div>
+    </header>
+
+    <!-- friends -toggle button that comes from the right side after clicking the icon -->
+    <aside class="right-sidebar">
+        <div class="control-panel">
+            <h3>Friends Activity</h3>
+
+            <div class="close-icons">
+                <img src="./assets/Icons/add-frinds.png" alt="Add friends">
+                <label for="friends-toggle">
+                    <img src="./assets/Icons/close.png" alt="Close">
+                </label>
+            </div>
+        </div>
+
+        <div class="friends-play">
+            <div class="play-pic">
+                <img src="./assets/Icons/friend1.png">
+            </div>
+            <div class="info-friends">
+                <h5>FriendlyMusicListener</h5>
+                <div class="author-info"> <img src="./assets/Icons/playing.png"> <span>Goosebumps · Travis Scott</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="friends-play">
+            <div class="play-pic">
+                <img src="./assets/Icons/friend2.png">
+            </div>
+            <div class="info-friends">
+                <h5>AverageMusicEnjoyer</h5>
+                <div class="author-info"> <img src="./assets/Icons/playing.png"> <span>Get Lucky · Daft Punk</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="friends-play">
+            <div class="play-pic">
+                <img src="./assets/Icons/friend3.png">
+            </div>
+            <div class="info-friends">
+                <h5>MusicEnthusiast</h5>
+                <span> 1h would he · joji</span>
+            </div>
+        </div>
+
+        <div class="friends-play">
+            <div class="play-pic">
+                <img src="./assets/Icons/friend4.png">
+            </div>
+            <div class="info-friends">
+                <h5>IListenToMusic56</h5>
+                <span> 6h Rockstar · Post Malone</span>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="library">
+                    <a href="#" class="nav-link"><img src="./assets/Icons/my-library.png" alt="library" />My
+                        Library</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><img src="./assets/Icons/pin.png" alt="pins" />Pins<img class="vector"
+                            src="./assets/Icons/Vector.png" /></a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><img src="./assets/Icons/playlist.png" alt="playlists" />Playlists<img
+                            class="vector" src="./assets/Icons/Vector.png" /></a>
+                </li>
+                <li>
+                    <a href="./liked-songs.html" class="nav-link"><img src="./assets/Icons/liked-songs.png"
+                            alt="liked-songs" />Liked songs</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><img src="./assets/Icons/saves.png" alt="saves" />Saves</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><img src="./assets/Icons/albums.png" alt="albums" />Albums</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><img src="./assets/Icons/folders.png" alt="folders" />Folders</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><img src="./assets/Icons/podcasts.png" alt="podcasts" />Podcasts</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><img src="./assets/Icons/audiobooks.png"
+                            alt="audiobooks" />Audiobooks</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><img src="./assets/Icons/artists.png" alt="artists" />Artists</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="discover-home-page">
+        <ul class="genres-bar">
+            <li class="current-tab"><a href="#">Music</a></li>
+            <li><a href="#">EDM</a></li>
+            <li><a href="#">Indie</a></li>
+            <li><a href="#">Pop</a></li>
+            <li><a href="#">Rock</a></li>
+            <li><a href="#">Alt Rock</a></li>
+            <li><a href="#">Country</a></li>
+            <li><a href="#">R&B</a></li>
+            <li><a href="#">Hip-hop</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Audiobooks</a></li>
+        </ul>
+
+        <section class="discover-container linkin-park-theme">
+            <div class="artist-img">
+                <img src="./assets/images/linkin-park.png" alt="linkin-park" class="artist-poster">
+            </div>
+            <div class="info-spotify">
+                <div class="lp-mix-img">
+                    <div class="box-shadow-top"></div>
+                    <img src="./assets/images/daily mix11.png" alt="daily mix">
+                </div>
+                <div class="lp-info-text">
+                    <h3>Linkin Park Mix</h3>
+                    <p>By Spotify • 2023 • 50 songs • 2 hr 45 min</p>
+                    <div class="discover-actions">
+                        <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41"
+                                viewBox="0 0 41 41" fill="none">
+                                <circle cx="20.2054" cy="20.2054" r="20.2054" fill="#1ED760" />
+                                <path
+                                    d="M26.3289 18.8797C27.3494 19.4688 27.3494 20.9418 26.3289 21.5309L18.2927 26.1707C17.2722 26.7598 15.9966 26.0234 15.9966 24.845L15.9966 15.5656C15.9966 14.3872 17.2722 13.6508 18.2927 14.2399L26.3289 18.8797Z"
+                                    fill="black" />
+                            </svg></button>
+                        <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41"
+                                viewBox="0 0 41 41" fill="none">
+                                <path
+                                    d="M12.3242 12.4008V28.7046C12.3242 29.648 13.3906 30.1967 14.1582 29.6484L19.0949 26.1222C19.9014 25.5461 20.9849 25.5461 21.7915 26.1222L26.7281 29.6484C27.4958 30.1967 28.5621 29.648 28.5621 28.7046V12.4008C28.5621 11.1196 27.5236 10.0811 26.2424 10.0811H14.6439C13.3628 10.0811 12.3242 11.1196 12.3242 12.4008Z"
+                                    stroke="#898989" stroke-width="2.3197" />
+                            </svg></button> <span class="number-info">500K</span>
+                        <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                viewBox="0 0 40 40" fill="none">
+                                <rect width="20" height="20" rx="3" transform="matrix(1 0 0 -1 9.82617 31.3298)"
+                                    stroke="#898989" stroke-width="2" stroke-linejoin="round" />
+                                <path
+                                    d="M11.8262 11.3298H27.8262C27.8262 9.67298 26.483 8.32983 24.8262 8.32983H14.8262C13.1693 8.32983 11.8262 9.67298 11.8262 11.3298Z"
+                                    stroke="#898989" stroke-width="1.5" stroke-linejoin="round" />
+                                <path
+                                    d="M15.8262 21.3298H19.8262M23.8262 21.3298H19.8262M19.8262 21.3298V17.3298M19.8262 21.3298V25.3298"
+                                    stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                        <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41"
+                                viewBox="0 0 41 41" fill="none">
+                                <path
+                                    d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622"
+                                    stroke="#898989" stroke-width="2.3573" stroke-linecap="round" />
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="#898989" stroke-width="2.3573"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="#898989" stroke-width="2.3573"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838"
+                                    stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                        <button class="icon-btn"><svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.6897 22.0167V10.7406M20.6897 10.7406L16.0466 15.3837M20.6897 10.7406L25.3328 15.3837M28.981 20.3585V25.0016C28.981 26.4669 27.7931 27.6548 26.3278 27.6548L15.0516 27.6548C13.5863 27.6548 12.3984 26.4669 12.3984 25.0016V20.3585"
+                                    stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                        <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41"
+                                viewBox="0 0 41 41" fill="none">
+                                <circle cx="11.7853" cy="20.2058" r="1.68378" fill="#898989" />
+                                <circle cx="20.2053" cy="20.2058" r="1.68378" fill="#898989" />
+                                <circle cx="28.6232" cy="20.2058" r="1.68378" fill="#898989" />
+                            </svg></button>
+                    </div>
+                    <div class="info-genres">
+                        <p>Rock</p>
+                        <p>Alt Rock</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discover-container daft-punk-theme">
+            <div class="artist-img">
+                <img src="./assets/images/get-lucky.png" alt="get Lucky" class="artist-poster">
+            </div>
+            <div class="info-spotify">
+                <div class="lp-mix-img">
+
+                    <img src="./assets/images/dp-album.png" alt="daily mix">
+                </div>
+                <div class="lp-info-text">
+                    <h3>Get Lucky</h3>
+                    <p>By Duft Punk • 2013 • 6:05</p>
+                    <div class="discover-actions">
+                        <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41"
+                                viewBox="0 0 41 41" fill="none">
+                                <circle cx="20.2054" cy="20.2054" r="20.2054" fill="#1ED760" />
+                                <path
+                                    d="M26.3289 18.8797C27.3494 19.4688 27.3494 20.9418 26.3289 21.5309L18.2927 26.1707C17.2722 26.7598 15.9966 26.0234 15.9966 24.845L15.9966 15.5656C15.9966 14.3872 17.2722 13.6508 18.2927 14.2399L26.3289 18.8797Z"
+                                    fill="black" />
+                            </svg></button>
+                        <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41"
+                                viewBox="0 0 41 41" fill="none">
+                                <path
+                                    d="M12.3242 12.4008V28.7046C12.3242 29.648 13.3906 30.1967 14.1582 29.6484L19.0949 26.1222C19.9014 25.5461 20.9849 25.5461 21.7915 26.1222L26.7281 29.6484C27.4958 30.1967 28.5621 29.648 28.5621 28.7046V12.4008C28.5621 11.1196 27.5236 10.0811 26.2424 10.0811H14.6439C13.3628 10.0811 12.3242 11.1196 12.3242 12.4008Z"
+                                    stroke="#898989" stroke-width="2.3197" />
+                            </svg></button> <span class="number-info">500K</span>
+                        <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                viewBox="0 0 40 40" fill="none">
+                                <rect width="20" height="20" rx="3" transform="matrix(1 0 0 -1 9.82617 31.3298)"
+                                    stroke="#898989" stroke-width="2" stroke-linejoin="round" />
+                                <path
+                                    d="M11.8262 11.3298H27.8262C27.8262 9.67298 26.483 8.32983 24.8262 8.32983H14.8262C13.1693 8.32983 11.8262 9.67298 11.8262 11.3298Z"
+                                    stroke="#898989" stroke-width="1.5" stroke-linejoin="round" />
+                                <path
+                                    d="M15.8262 21.3298H19.8262M23.8262 21.3298H19.8262M19.8262 21.3298V17.3298M19.8262 21.3298V25.3298"
+                                    stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                        <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41"
+                                viewBox="0 0 41 41" fill="none">
+                                <path
+                                    d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622"
+                                    stroke="#898989" stroke-width="2.3573" stroke-linecap="round" />
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="#898989" stroke-width="2.3573"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="#898989" stroke-width="2.3573"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838"
+                                    stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                        <button class="icon-btn"><svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.6897 22.0167V10.7406M20.6897 10.7406L16.0466 15.3837M20.6897 10.7406L25.3328 15.3837M28.981 20.3585V25.0016C28.981 26.4669 27.7931 27.6548 26.3278 27.6548L15.0516 27.6548C13.5863 27.6548 12.3984 26.4669 12.3984 25.0016V20.3585"
+                                    stroke="#898989" stroke-width="2.02054" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></button>
+                        <button class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41"
+                                viewBox="0 0 41 41" fill="none">
+                                <circle cx="11.7853" cy="20.2058" r="1.68378" fill="#898989" />
+                                <circle cx="20.2053" cy="20.2058" r="1.68378" fill="#898989" />
+                                <circle cx="28.6232" cy="20.2058" r="1.68378" fill="#898989" />
+                            </svg></button>
+                    </div>
+                    <div class="info-genres">
+                        <p>Rock</p>
+                        <p>Alt Rock</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="player">
+        <div class="player-left">
+            <div class="on-off">
+                <img src="./assets/Icons/playing-icon.png" />
+            </div>
+            <img src="./assets/Icons/before.png" />
+            <img src="./assets/Icons/next.png" />
+            <img src="./assets/Icons/shuffle.png" />
+            <img src="./assets/Icons/on-repeat.png" />
+            <img src="./assets/Icons/line.png" />
+            <img src="./assets/Icons/volume.png" />
+        </div>
+
+        <div class="player-center">
+            <img src="./assets/Icons/daft-punk-play.png" alt="daft-punk" />
+            <div class="track-info">
+                <div class="track-name">Get Lucky</div>
+                <div class="track-info">Daft Punk</div>
+                <div class="track-info">Random Access Memories</div>
+            </div>
+        </div>
+        <div class="player-right">
+            <img src="./assets/Icons/liked-songs.png" />
+            <img src="./assets/Icons/add-playlist.png" />
+            <img src="./assets/Icons/lyrics.png" />
+            <img src="./assets/Icons/devices.png" />
+            <img class="more" src="./assets/Icons/play-more.png" />
+            <img src="./assets/Icons/DJ.png" />
+            <img src="./assets/Icons/queue.png" />
+        </div>
+    </footer>
+</body>
+
+</html>
