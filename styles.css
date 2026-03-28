@@ -909,19 +909,20 @@ header {
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
-.cards-header .arrows {
+
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+.arrows button {
   display: flex;
   gap: 12px;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
   opacity: 0.7;
   transition: 0.3s;
   background: none;
   border: none;
   margin-left: auto;
-  width: 40px;
-  height: 40px;
 }
 
 .card-grid {
@@ -1130,6 +1131,140 @@ p {
   font-weight: 400;
   font-size: 12px;
   color: rgb(149, 230, 211);
+}
+
+.discover-link {
+  background-color: rgba(32, 32, 32, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+  color: #E0E0E0;
+}
+
+.discover-home-page {
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 10px;
+  margin: 41px 5px 0px 275px;
+  overflow-y: scroll;
+  height: 90vh;
+  scroll-snap-type: y mandatory;
+}
+
+.genres-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  padding-left: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(6, 6, 6, 0.8);
+  position: fixed;
+  width: 100%;
+}
+.genres-bar li {
+  background-color: rgba(32, 32, 32, 0.5);
+  border-radius: 8px;
+}
+.genres-bar a {
+  display: block;
+  padding: 8px 15px;
+  color: #E0E0E0;
+}
+
+.current-tab a {
+  color: rgb(17, 17, 17);
+  background-color: rgb(224, 224, 224);
+  border-radius: 8px;
+}
+
+.discover-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  background-color: rgba(140, 216, 204, 0.14);
+  height: 90vh;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.artist-poster {
+  width: 390px;
+  height: 612px;
+  border-radius: 10px;
+}
+
+.info-spotify {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.lp-mix-img {
+  width: 184px;
+  height: 193px;
+}
+.lp-mix-img img {
+  border-radius: 8px;
+  box-shadow: 8px;
+}
+
+.box-shadow-top {
+  width: 169px;
+  height: 8px;
+  border-radius: 8px 8px 0 0;
+  background-color: rgba(148, 231, 211, 0.3);
+  margin-left: 7px;
+}
+
+.lp-info-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 15px;
+}
+.lp-info-text h3 {
+  color: rgb(224, 224, 224);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 3%;
+}
+.lp-info-text p {
+  color: rgb(137, 137, 137);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.number-info {
+  color: rgb(137, 137, 137);
+}
+
+.discover-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.info-genres {
+  display: flex;
+  gap: 10px;
+}
+.info-genres p {
+  border: 2px solid rgba(137, 137, 137, 0.1);
+  border-radius: 44px;
+  padding: 8px 13px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.daft-punk-theme {
+  background-color: rgba(223, 114, 47, 0.12);
 }
 
 /*# sourceMappingURL=styles.css.map */
