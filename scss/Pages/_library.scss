@@ -98,18 +98,18 @@
 }
 .pin-icon {
       position: absolute;
-      top: 8px;    // დაშორება ზემოდან
-      right: 8px;  // დაშორება მარჯვნიდან
+      top: 8px;    
+      right: 8px;  
       width: 40px;
       height: 40px;
-      background-color: rgba(0, 0, 0, 0.7); // ნახევრად გამჭვირვალე შავი
+      background-color: rgba(0, 0, 0, 0.7);  
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
-      backdrop-filter: blur(4px); // Spotify-ს ეფექტი 
+      backdrop-filter: blur(4px); 
       img {
-        width: 40px;
+       width: 40px;
       height: 40px;
       }
 }
@@ -130,4 +130,5 @@
     color: rgba(149, 230, 211, 1);
   }
 }
+
 
