@@ -1,5 +1,5 @@
 @use "./variables" as v;
-@use "./mixins" as M;
+
 
 @mixin border($radius: 8px, $color: rgba(32, 32, 32, 1)) {
     border-radius: $radius;

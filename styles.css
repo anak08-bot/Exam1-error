@@ -75,16 +75,6 @@ a {
   font-size: 14px;
 }
 
-.arrow-btn {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: 0.3s;
-  background: none;
-  border: none;
-}
-
 .sidebar {
   width: 16rem;
   height: 100vh;
@@ -713,17 +703,25 @@ header {
   background-color: rgb(83, 122, 161);
 }
 
-.made-foru-header {
+.cards-header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
+  width: 100%;
 }
-.made-foru-header .arrows {
+.cards-header h2 {
+  color: #E0E0E0 !important;
+  font-style: Bold;
+  font-size: 20px;
+  letter-spacing: 3%;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.cards-header .arrows {
   display: flex;
   gap: 12px;
-}
-.made-foru-header .arrow-btn {
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -731,18 +729,9 @@ header {
   transition: 0.3s;
   background: none;
   border: none;
-}
-.made-foru-header .more-icon {
-  width: 20px;
-  cursor: pointer;
-  margin-left: 4px;
-}
-.made-foru-header h2 {
-  color: #E0E0E0;
-  font-style: Bold;
-  font-size: 20px;
-  letter-spacing: 3%;
-  padding-bottom: 15px;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
 }
 
 .card-grid {
@@ -834,6 +823,102 @@ p {
   line-height: 100%;
   letter-spacing: 3%;
   color: rgb(137, 137, 137);
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.filter-left, .filter-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.filter-option span {
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 500;
+}
+.filter-option img {
+  width: 14px;
+}
+.filter-option:hover span {
+  color: #fff;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+button img {
+  width: 20px;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+button img:hover {
+  opacity: 1;
+}
+
+.library-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 170px);
+  gap: 20px;
+  justify-content: start;
+  padding: 10px;
+}
+
+.card-library {
+  width: 170px;
+  height: 254px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.card-library:hover {
+  background: #242424;
+}
+.card-library img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card-library p {
+  font-size: 12px;
+  color: rgb(137, 137, 137);
+}
+
+.title-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-card p {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(224, 224, 224);
+}
+.title-card span {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(149, 230, 211);
 }
 
 /*# sourceMappingURL=styles.css.map */
