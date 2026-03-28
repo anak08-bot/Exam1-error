@@ -1,6 +1,5 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
-@use "../base/base" as b;
 
 .sidebar {
   width: 16rem;
@@ -43,7 +42,7 @@
   cursor: pointer;
   border-radius: 8px;
   color: v.$text-primary;
-  background-color: rgb(0, 0, 0);
+  background-color: v.$btn-background;
 }
 
 .library a {

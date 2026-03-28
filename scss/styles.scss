@@ -3,8 +3,14 @@
 @use "./base/typography";
 @use "./abstracts/variables";
 @use "./abstracts/mixins";
-@use "./components/sidebar";
-@use "./components/header";
+@use "./layout/sidebar";
+@use "./layout/header";
 @use "./components/main-view";
-@use "./components/footer";
+@use "./layout/footer";
+@use "./components/friends";
+@use "./Pages/liked-songs";
+@use "./Pages/search";
+// @use "./components/sidebar";
+// @use "./components/header";
 @use "./components/cards";
+@use "./Pages/library";
