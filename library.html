@@ -13,9 +13,13 @@
     <header>
         <nav class="main-nav">
             <ul>
-                <li class="home-btn">
+                <li class="home-btn-liked-songs">
                     <a href="./index.html">
-                        <img src="./assets/Icons/home.png" alt="Home" />Home
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.2566 28.6243H28.6242C29.5541 28.6243 30.3079 27.8704 30.3079 26.9405V19.432C30.3079 18.9368 30.0899 18.4666 29.7118 18.1467L21.2929 11.023C20.6651 10.4918 19.7454 10.4918 19.1176 11.023L10.6987 18.1467C10.3206 18.4666 10.1025 18.9368 10.1025 19.432V26.9405C10.1025 27.8704 10.8564 28.6243 11.7863 28.6243H15.1539"
+                                stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>Home
                     </a>
                 </li>
 
@@ -119,11 +123,12 @@
         </div>
     </aside>
 
-    <aside class="sidebar">
+    <aside class="sidebar liked-songs-nav">
         <nav class="sidebar-nav">
             <ul>
                 <li class="library">
-                    <a href="#" class="nav-link"><img src="./assets/Icons/my-library.png" alt="library" />My
+                    <a href="#" class="nav-link liked-songs-btn"><img src="./assets/Icons/my-library.png"
+                            alt="library" />My
                         Library</a>
                 </li>
                 <li>
@@ -158,179 +163,179 @@
                     <a href="#" class="nav-link"><img src="./assets/Icons/artists.png" alt="artists" />Artists</a>
                 </li>
             </ul>
-            
+
         </nav>
     </aside>
     <main class="main-views">
-       
-        
-        <!-- shigtavsi -->
-<div class="filter-bar">
-    <div class="filter-left">
-        <button class="icon-btn">
-            <img src="./assets/Icons/Group 41.png" alt="list">
-        </button>
-        <button class="icon-btn">
-            <img src="./assets/Icons/icons big.png" alt="grid">
-        </button>
-    </div>
 
-    <div class="filter-right">
-        <div class="filter-option">
-            <span>Recent</span>
-            <img src="./assets/Icons/Group 76.png" alt="arrow">
-        </div>
-        <div class="filter-option">
-            <span>Group</span>
-            <img src="./assets/Icons/Group 41 (1).png" alt="list button">
-        </div>
-        <button class="search-btn">
-            <img src="./assets/Icons/Ellipse 11.png" alt="search">
-        </button>
-    </div>
-</div>
-<section class="library-cards-container">
-        <div class="card-library">
-            <img src="./assets/images/like1.png" alt="like-songs">
-            <div class="pin-icon">
-            <img src="./assets/Icons/pin.svg" alt="pinned">
-        </div>
-            <div class="title-card">
-                <p>Liked songs</p>
-                <span>8</span>
+
+        <!-- shigtavsi -->
+        <div class="filter-bar">
+            <div class="filter-left">
+                <button class="icon-btn">
+                    <img src="./assets/Icons/Group 41.png" alt="list">
+                </button>
+                <button class="icon-btn">
+                    <img src="./assets/Icons/icons big.png" alt="grid">
+                </button>
             </div>
-            <p>Numb, Crawling, In the End, and more</p>
-        </div>
-        <div class="card-library">
-             <img src="./assets/images/bowie2.png" alt="David Bowie">
-            <div class="title-card">
-                <p>David Bowie</p>
+
+            <div class="filter-right">
+                <div class="filter-option">
+                    <span>Recent</span>
+                    <img src="./assets/Icons/Group 76.png" alt="arrow">
+                </div>
+                <div class="filter-option">
+                    <span>Group</span>
+                    <img src="./assets/Icons/Group 41 (1).png" alt="list button">
+                </div>
+                <button class="search-btn">
+                    <img src="./assets/Icons/Ellipse 11.png" alt="search">
+                </button>
             </div>
         </div>
-        <div class="card-library">
-             <img src="./assets/images/daft punk333.png" alt="Daft Punk">
-            <div class="title-card">
-                <p>Daft Punk</p>
+        <section class="library-cards-container">
+            <div class="card-library">
+                <img src="./assets/images/like1.png" alt="like-songs">
+                <div class="pin-icon">
+                    <img src="./assets/Icons/pin.svg" alt="pinned">
                 </div>
-        </div>
-        <div class="card-library">
-             <img src="./assets/images/song4.png" alt="like-song">
-            <div class="title-card">
-                <p>Chill Stuff</p>
-                <span>152</span>
-                </div>
-                <p>Simon and Garfunkel, Daft Punk, and more</p>
-        </div>
-        <div class="card-library">
-              <img src="./assets/images/song4.png" alt="like-song">
-            <div class="title-card">
-                <p>The Jux Box</p>
-                <span>50</span>
-                </div>
-                <p>Simon and Garfunkel, Daft Punk, and more</p>
-        </div>
-        <div class="card-library">
-               <img src="./assets/images/song4.png" alt="like-song">
-            <div class="title-card">
-                <p>Vibe</p>
-                <span>30</span>
-                </div>
-                <p>Blue Skies, No Heaven</p>
-        </div>
-        <div class="card-library">
-            <img src="./assets/images/song4.png" alt="like-song">
-            <div class="title-card">
-                <p>Selected Linkin Park</p>
-                <span>8</span>
+                <div class="title-card">
+                    <p>Liked songs</p>
+                    <span>8</span>
                 </div>
                 <p>Numb, Crawling, In the End, and more</p>
-        </div>
-        <div class="card-library">
-            <img src="./assets/images/folder5.png" alt="album">
-            <div class="title-card">
-                <p>Fav bands</p>
-                <span>6</span>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/bowie2.png" alt="David Bowie">
+                <div class="title-card">
+                    <p>David Bowie</p>
+                </div>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/daft punk333.png" alt="Daft Punk">
+                <div class="title-card">
+                    <p>Daft Punk</p>
+                </div>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/song4.png" alt="like-song">
+                <div class="title-card">
+                    <p>Chill Stuff</p>
+                    <span>152</span>
+                </div>
+                <p>Simon and Garfunkel, Daft Punk, and more</p>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/song4.png" alt="like-song">
+                <div class="title-card">
+                    <p>The Jux Box</p>
+                    <span>50</span>
+                </div>
+                <p>Simon and Garfunkel, Daft Punk, and more</p>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/song4.png" alt="like-song">
+                <div class="title-card">
+                    <p>Vibe</p>
+                    <span>30</span>
+                </div>
+                <p>Blue Skies, No Heaven</p>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/song4.png" alt="like-song">
+                <div class="title-card">
+                    <p>Selected Linkin Park</p>
+                    <span>8</span>
+                </div>
+                <p>Numb, Crawling, In the End, and more</p>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/folder5.png" alt="album">
+                <div class="title-card">
+                    <p>Fav bands</p>
+                    <span>6</span>
                 </div>
                 <p>Linkin Park, Muse, and more</p>
-        </div>
-        <div class="card-library">
-            <img src="./assets/images/cover6.png" alt="album">
-            <div class="title-card">
-                <p>Meteora</p>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/cover6.png" alt="album">
+                <div class="title-card">
+                    <p>Meteora</p>
                 </div>
                 <p>Linkin Park</p>
-        </div>
-        <div class="card-library">
-            <img src="./assets/images/daft punk7.png" alt="daft punk">
-            <div class="title-card">
-                <p>Random Access...</p>
-                <span>13</span>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/daft punk7.png" alt="daft punk">
+                <div class="title-card">
+                    <p>Random Access...</p>
+                    <span>13</span>
                 </div>
                 <p>Daft Punk</p>
-        </div>
-        <div class="card-library">
-            <img src="./assets/images/the beatles8.png" alt="the beatles">
-            <div class="title-card">
-                <p>Abbey Road</p>
-                <span>13</span>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/the beatles8.png" alt="the beatles">
+                <div class="title-card">
+                    <p>Abbey Road</p>
+                    <span>13</span>
                 </div>
                 <p>The Beatles</p>
-        </div>
-        <div class="card-library">
-            <img src="./assets/images/muse9.png" alt="Muse">
-            <div class="title-card">
-                <p>Black Holes and Revelations</p>
-                <span>13</span>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/muse9.png" alt="Muse">
+                <div class="title-card">
+                    <p>Black Holes and Revelations</p>
+                    <span>13</span>
                 </div>
                 <p>Muse</p>
-        </div>
-        <div class="card-library">
-            <img src="./assets/images/mix1.png" alt="daily mix">
-            <div class="title-card">
-                <p>Daily Mix 1</p>
-                <span>50</span>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/mix1.png" alt="daily mix">
+                <div class="title-card">
+                    <p>Daily Mix 1</p>
+                    <span>50</span>
                 </div>
                 <p>Linkin Park, System Of A Down, Coal Chamber...</p>
-        </div>
-        <div class="card-library">
-            <img src="./assets/images/mix2.png" alt="daily mix">
-            <div class="title-card">
-                <p>Daily Mix 2</p>
-                <span>50</span>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/mix2.png" alt="daily mix">
+                <div class="title-card">
+                    <p>Daily Mix 2</p>
+                    <span>50</span>
                 </div>
                 <p>Linkin Park, System Of A Down, Coal Chamber...</p>
-        </div>
-        <div class="card-library">
-             <img src="./assets/images/mix3.png" alt="daily mix">
-            <div class="title-card">
-                <p>Daily Mix 3</p>
-                <span>50</span>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/mix3.png" alt="daily mix">
+                <div class="title-card">
+                    <p>Daily Mix 3</p>
+                    <span>50</span>
                 </div>
                 <p>The Strokes, Martin Garrix, MGMT and more</p>
-        </div>
-        <div class="card-library">
-             <img src="./assets/images/mix4.png" alt="daily mix">
-            <div class="title-card">
-                <p>Daily Mix</p>
-                <span>50</span>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/mix4.png" alt="daily mix">
+                <div class="title-card">
+                    <p>Daily Mix</p>
+                    <span>50</span>
                 </div>
                 <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
-        </div>
-        <div class="card-library"> 
-            <img src="./assets/images/cover14.png" alt="chill mix">
-            <div class="title-card">
-                <p>Chill Mix</p>
-                <span>50</span>
+            </div>
+            <div class="card-library">
+                <img src="./assets/images/cover14.png" alt="chill mix">
+                <div class="title-card">
+                    <p>Chill Mix</p>
+                    <span>50</span>
                 </div>
                 <p>MF DOOM, Daft Punk, The Chainsmokers, and more</p>
-        <div class="card-library">
-              <img src="./assets/images/billie15.png" alt="pop mix">
-            <div class="title-card">
-                <p>Pop Mix</p>
-                <span>50</span>
+                <div class="card-library">
+                    <img src="./assets/images/billie15.png" alt="pop mix">
+                    <div class="title-card">
+                        <p>Pop Mix</p>
+                        <span>50</span>
+                    </div>
+                    <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
                 </div>
-                <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
-        </div>
-    </section>
+        </section>
     </main>
 </body>
