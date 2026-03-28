@@ -768,6 +768,9 @@ header {
     height: 40px !important;
     position: relative;
   }
+  main {
+    margin-bottom: 120px;
+  }
 }
 .search-header {
   display: flex;
